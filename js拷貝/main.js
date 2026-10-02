@@ -266,24 +266,14 @@ document.addEventListener('DOMContentLoaded', () => {
         );
     }
 
-    // 1. 高於視窗時先捲到 About 底部，再固定讓作品區往上覆蓋。
-    const aboutSection = document.querySelector('.about');
-    if (aboutSection) {
-        ScrollTrigger.create({
-            trigger: aboutSection,
-            start: "top top",
-            end: "bottom top",
-            pinSpacing: false,
-            invalidateOnRefresh: true,
-            onRefreshInit: () => {
-                const stickyTop = Math.min(0, window.innerHeight - aboutSection.getBoundingClientRect().height);
-                aboutSection.style.top = `${stickyTop}px`;
-            }
-        });
-
-        // 字型載入後重新量測，避免換行改變內容高度。
-        document.fonts.ready.then(() => ScrollTrigger.refresh());
-    }
+    // 1. 固定區塊
+    ScrollTrigger.create({
+        trigger: ".about",
+        start: "top top",
+        end: "bottom top",
+        pinSpacing: false,
+        invalidateOnRefresh: true
+    });
 
     let resizeTimer;
     window.addEventListener('resize', () => {

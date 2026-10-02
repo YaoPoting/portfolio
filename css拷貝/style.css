@@ -1,0 +1,1340 @@
+@import url("https://cdn.jsdelivr.net/npm/bootstrap-icons@1.11.3/font/bootstrap-icons.min.css");
+@import url("https://fonts.googleapis.com/css2?family=Source+Sans+3:ital,wght@0,200..900;1,200..900&display=swap");
+body {
+  background-color: #FFB000;
+}
+
+.wrapper, *:before, *:after {
+  position: relative;
+  margin: 0;
+  font-family: "Source Sans 3", "Noto Sans TC", sans-serif, Verdana, Geneva, Tahoma, sans-serif;
+  font-weight: normal;
+  box-sizing: border-box;
+}
+
+a {
+  text-decoration: none;
+  color: unset;
+}
+a:hover {
+  color: unset;
+}
+
+.header {
+  width: 100%;
+  height: 65px;
+  background-color: #ffa330;
+  color: white;
+  border-bottom: 1px solid white;
+  font-size: 1.25rem;
+}
+@media screen and (max-width: 992px) {
+  .header {
+    font-size: 1rem;
+  }
+}
+.header .signature {
+  width: 130px;
+}
+.header .pointer {
+  cursor: pointer;
+}
+
+.footer {
+  position: relative;
+  line-height: 0px;
+  width: 100%;
+  height: 65px;
+  z-index: 50;
+}
+.footer iframe {
+  height: 65px;
+}
+
+.pageNotFound {
+  background-color: #FFB000;
+  width: 100vw;
+  height: 100vh;
+}
+.pageNotFound .title {
+  font-size: 11rem;
+  font-weight: 900;
+  color: white;
+}
+
+.wrapper {
+  background-color: white;
+}
+.wrapper .kv {
+  background-color: white;
+}
+.wrapper .kv .smokeFrame {
+  position: relative;
+  width: 100%;
+  height: 450px;
+  background-color: #FFB000;
+  background-image: url("../images/overlay.png");
+}
+.wrapper .kv .smokeFrame .smoke {
+  position: absolute;
+  border: 2px solid rgba(255, 255, 255, 0.1);
+  border-radius: 400px;
+  margin: auto;
+}
+@keyframes spin {
+  0% {
+    transform: rotate(0deg);
+  }
+  100% {
+    transform: rotate(360deg);
+  }
+}
+.wrapper .kv .smokeFrame .smoke:nth-child(1) {
+  box-shadow: 3px 0px rgba(255, 255, 255, 0), 6px -5px rgba(10, 0, 0, 0);
+  width: 6px;
+  height: 1px;
+  right: 10px;
+  bottom: 10px;
+  filter: blur(8.3333333333px);
+  transform-origin: 4px 2px;
+  animation: spin 3s 0.1s linear infinite;
+  background: rgba(183, 71, 50, 0.9875);
+}
+.wrapper .kv .smokeFrame .smoke:nth-child(2) {
+  box-shadow: 3px 0px rgba(255, 255, 255, 0), 6px -5px rgba(10, 0, 0, 0);
+  width: 12px;
+  height: 2px;
+  right: 20px;
+  bottom: 20px;
+  filter: blur(8.6666666667px);
+  transform-origin: 8px 4px;
+  animation: spin 3s 0.2s linear infinite;
+  background: rgba(186, 72, 50, 0.975);
+}
+.wrapper .kv .smokeFrame .smoke:nth-child(3) {
+  box-shadow: 3px 0px rgba(255, 255, 255, 0), 6px -5px rgba(10, 0, 0, 0);
+  width: 18px;
+  height: 3px;
+  right: 30px;
+  bottom: 30px;
+  filter: blur(9px);
+  transform-origin: 12px 6px;
+  animation: spin 3s 0.3s linear infinite;
+  background: rgba(189, 73, 50, 0.9625);
+}
+.wrapper .kv .smokeFrame .smoke:nth-child(4) {
+  box-shadow: 3px 0px rgba(255, 255, 255, 0), 6px -5px rgba(10, 0, 0, 0);
+  width: 24px;
+  height: 4px;
+  right: 40px;
+  bottom: 40px;
+  filter: blur(9.3333333333px);
+  transform-origin: 16px 8px;
+  animation: spin 3s 0.4s linear infinite;
+  background: rgba(192, 74, 50, 0.95);
+}
+.wrapper .kv .smokeFrame .smoke:nth-child(5) {
+  box-shadow: 3px 0px rgba(255, 255, 255, 0), 6px -5px rgba(10, 0, 0, 0);
+  width: 30px;
+  height: 5px;
+  right: 50px;
+  bottom: 50px;
+  filter: blur(9.6666666667px);
+  transform-origin: 20px 10px;
+  animation: spin 3s 0.5s linear infinite;
+  background: rgba(195, 75, 50, 0.9375);
+}
+.wrapper .kv .smokeFrame .smoke:nth-child(6) {
+  box-shadow: 3px 0px rgba(255, 255, 255, 0), 6px -5px rgba(10, 0, 0, 0);
+  width: 36px;
+  height: 6px;
+  right: 60px;
+  bottom: 60px;
+  filter: blur(10px);
+  transform-origin: 24px 12px;
+  animation: spin 3s 0.6s linear infinite;
+  background: rgba(198, 76, 50, 0.925);
+}
+.wrapper .kv .smokeFrame .smoke:nth-child(7) {
+  box-shadow: 3px 0px rgba(255, 255, 255, 0), 6px -5px rgba(10, 0, 0, 0);
+  width: 42px;
+  height: 7px;
+  right: 70px;
+  bottom: 70px;
+  filter: blur(10.3333333333px);
+  transform-origin: 28px 14px;
+  animation: spin 3s 0.7s linear infinite;
+  background: rgba(201, 77, 50, 0.9125);
+}
+.wrapper .kv .smokeFrame .smoke:nth-child(8) {
+  box-shadow: 3px 0px rgba(255, 255, 255, 0), 6px -5px rgba(10, 0, 0, 0);
+  width: 48px;
+  height: 8px;
+  right: 80px;
+  bottom: 80px;
+  filter: blur(10.6666666667px);
+  transform-origin: 32px 16px;
+  animation: spin 3s 0.8s linear infinite;
+  background: rgba(204, 78, 50, 0.9);
+}
+.wrapper .kv .smokeFrame .smoke:nth-child(9) {
+  box-shadow: 3px 0px rgba(255, 255, 255, 0), 6px -5px rgba(10, 0, 0, 0);
+  width: 54px;
+  height: 9px;
+  right: 90px;
+  bottom: 90px;
+  filter: blur(11px);
+  transform-origin: 36px 18px;
+  animation: spin 3s 0.9s linear infinite;
+  background: rgba(207, 79, 50, 0.8875);
+}
+.wrapper .kv .smokeFrame .smoke:nth-child(10) {
+  box-shadow: 3px 0px rgba(255, 255, 255, 0), 6px -5px rgba(10, 0, 0, 0);
+  width: 60px;
+  height: 10px;
+  right: 100px;
+  bottom: 100px;
+  filter: blur(11.3333333333px);
+  transform-origin: 40px 20px;
+  animation: spin 3s 1s linear infinite;
+  background: rgba(210, 80, 50, 0.875);
+}
+.wrapper .kv .smokeFrame .smoke:nth-child(11) {
+  box-shadow: 3px 0px rgba(255, 255, 255, 0), 6px -5px rgba(10, 0, 0, 0);
+  width: 66px;
+  height: 11px;
+  right: 110px;
+  bottom: 110px;
+  filter: blur(11.6666666667px);
+  transform-origin: 44px 22px;
+  animation: spin 3s 1.1s linear infinite;
+  background: rgba(213, 81, 50, 0.8625);
+}
+.wrapper .kv .smokeFrame .smoke:nth-child(12) {
+  box-shadow: 3px 0px rgba(255, 255, 255, 0), 6px -5px rgba(10, 0, 0, 0);
+  width: 72px;
+  height: 12px;
+  right: 120px;
+  bottom: 120px;
+  filter: blur(12px);
+  transform-origin: 48px 24px;
+  animation: spin 3s 1.2s linear infinite;
+  background: rgba(216, 82, 50, 0.85);
+}
+.wrapper .kv .smokeFrame .smoke:nth-child(13) {
+  box-shadow: 3px 0px rgba(255, 255, 255, 0), 6px -5px rgba(10, 0, 0, 0);
+  width: 78px;
+  height: 13px;
+  right: 130px;
+  bottom: 130px;
+  filter: blur(12.3333333333px);
+  transform-origin: 52px 26px;
+  animation: spin 3s 1.3s linear infinite;
+  background: rgba(219, 83, 50, 0.8375);
+}
+.wrapper .kv .smokeFrame .smoke:nth-child(14) {
+  box-shadow: 3px 0px rgba(255, 255, 255, 0), 6px -5px rgba(10, 0, 0, 0);
+  width: 84px;
+  height: 14px;
+  right: 140px;
+  bottom: 140px;
+  filter: blur(12.6666666667px);
+  transform-origin: 56px 28px;
+  animation: spin 3s 1.4s linear infinite;
+  background: rgba(222, 84, 50, 0.825);
+}
+.wrapper .kv .smokeFrame .smoke:nth-child(15) {
+  box-shadow: 3px 0px rgba(255, 255, 255, 0), 6px -5px rgba(10, 0, 0, 0);
+  width: 90px;
+  height: 15px;
+  right: 150px;
+  bottom: 150px;
+  filter: blur(13px);
+  transform-origin: 60px 30px;
+  animation: spin 3s 1.5s linear infinite;
+  background: rgba(225, 85, 50, 0.8125);
+}
+.wrapper .kv .smokeFrame .smoke:nth-child(16) {
+  box-shadow: 3px 0px rgba(255, 255, 255, 0), 6px -5px rgba(10, 0, 0, 0);
+  width: 96px;
+  height: 16px;
+  right: 160px;
+  bottom: 160px;
+  filter: blur(13.3333333333px);
+  transform-origin: 64px 32px;
+  animation: spin 3s 1.6s linear infinite;
+  background: rgba(228, 86, 50, 0.8);
+}
+.wrapper .kv .smokeFrame .smoke:nth-child(17) {
+  box-shadow: 3px 0px rgba(255, 255, 255, 0), 6px -5px rgba(10, 0, 0, 0);
+  width: 102px;
+  height: 17px;
+  right: 170px;
+  bottom: 170px;
+  filter: blur(13.6666666667px);
+  transform-origin: 68px 34px;
+  animation: spin 3s 1.7s linear infinite;
+  background: rgba(231, 87, 50, 0.7875);
+}
+.wrapper .kv .smokeFrame .smoke:nth-child(18) {
+  box-shadow: 3px 0px rgba(255, 255, 255, 0), 6px -5px rgba(10, 0, 0, 0);
+  width: 108px;
+  height: 18px;
+  right: 180px;
+  bottom: 180px;
+  filter: blur(14px);
+  transform-origin: 72px 36px;
+  animation: spin 3s 1.8s linear infinite;
+  background: rgba(234, 88, 50, 0.775);
+}
+.wrapper .kv .smokeFrame .smoke:nth-child(19) {
+  box-shadow: 3px 0px rgba(255, 255, 255, 0), 6px -5px rgba(10, 0, 0, 0);
+  width: 114px;
+  height: 19px;
+  right: 190px;
+  bottom: 190px;
+  filter: blur(14.3333333333px);
+  transform-origin: 76px 38px;
+  animation: spin 3s 1.9s linear infinite;
+  background: rgba(237, 89, 50, 0.7625);
+}
+.wrapper .kv .smokeFrame .smoke:nth-child(20) {
+  box-shadow: 3px 0px rgba(255, 255, 255, 0), 6px -5px rgba(10, 0, 0, 0);
+  width: 120px;
+  height: 20px;
+  right: 200px;
+  bottom: 200px;
+  filter: blur(14.6666666667px);
+  transform-origin: 80px 40px;
+  animation: spin 3s 2s linear infinite;
+  background: rgba(240, 90, 50, 0.75);
+}
+.wrapper .kv .smokeFrame .smoke:nth-child(21) {
+  box-shadow: 3px 0px rgba(255, 255, 255, 0), 6px -5px rgba(10, 0, 0, 0);
+  width: 126px;
+  height: 21px;
+  right: 210px;
+  bottom: 210px;
+  filter: blur(15px);
+  transform-origin: 84px 42px;
+  animation: spin 3s 2.1s linear infinite;
+  background: rgba(243, 91, 50, 0.7375);
+}
+.wrapper .kv .smokeFrame .smoke:nth-child(22) {
+  box-shadow: 3px 0px rgba(255, 255, 255, 0), 6px -5px rgba(10, 0, 0, 0);
+  width: 132px;
+  height: 22px;
+  right: 220px;
+  bottom: 220px;
+  filter: blur(15.3333333333px);
+  transform-origin: 88px 44px;
+  animation: spin 3s 2.2s linear infinite;
+  background: rgba(246, 92, 50, 0.725);
+}
+.wrapper .kv .smokeFrame .smoke:nth-child(23) {
+  box-shadow: 3px 0px rgba(255, 255, 255, 0), 6px -5px rgba(10, 0, 0, 0);
+  width: 138px;
+  height: 23px;
+  right: 230px;
+  bottom: 230px;
+  filter: blur(15.6666666667px);
+  transform-origin: 92px 46px;
+  animation: spin 3s 2.3s linear infinite;
+  background: rgba(249, 93, 50, 0.7125);
+}
+.wrapper .kv .smokeFrame .smoke:nth-child(24) {
+  box-shadow: 3px 0px rgba(255, 255, 255, 0), 6px -5px rgba(10, 0, 0, 0);
+  width: 144px;
+  height: 24px;
+  right: 240px;
+  bottom: 240px;
+  filter: blur(16px);
+  transform-origin: 96px 48px;
+  animation: spin 3s 2.4s linear infinite;
+  background: rgba(252, 94, 50, 0.7);
+}
+.wrapper .kv .smokeFrame .smoke:nth-child(25) {
+  box-shadow: 3px 0px rgba(255, 255, 255, 0), 6px -5px rgba(10, 0, 0, 0);
+  width: 150px;
+  height: 25px;
+  right: 250px;
+  bottom: 250px;
+  filter: blur(16.3333333333px);
+  transform-origin: 100px 50px;
+  animation: spin 3s 2.5s linear infinite;
+  background: rgba(255, 95, 50, 0.6875);
+}
+.wrapper .kv .smokeFrame .smoke:nth-child(26) {
+  box-shadow: 3px 0px rgba(255, 255, 255, 0), 6px -5px rgba(10, 0, 0, 0);
+  width: 156px;
+  height: 26px;
+  right: 260px;
+  bottom: 260px;
+  filter: blur(16.6666666667px);
+  transform-origin: 104px 52px;
+  animation: spin 3s 2.6s linear infinite;
+  background: rgba(255, 96, 50, 0.675);
+}
+.wrapper .kv .smokeFrame .smoke:nth-child(27) {
+  box-shadow: 3px 0px rgba(255, 255, 255, 0), 6px -5px rgba(10, 0, 0, 0);
+  width: 162px;
+  height: 27px;
+  right: 270px;
+  bottom: 270px;
+  filter: blur(17px);
+  transform-origin: 108px 54px;
+  animation: spin 3s 2.7s linear infinite;
+  background: rgba(255, 97, 50, 0.6625);
+}
+.wrapper .kv .smokeFrame .smoke:nth-child(28) {
+  box-shadow: 3px 0px rgba(255, 255, 255, 0), 6px -5px rgba(10, 0, 0, 0);
+  width: 168px;
+  height: 28px;
+  right: 280px;
+  bottom: 280px;
+  filter: blur(17.3333333333px);
+  transform-origin: 112px 56px;
+  animation: spin 3s 2.8s linear infinite;
+  background: rgba(255, 98, 50, 0.65);
+}
+.wrapper .kv .smokeFrame .smoke:nth-child(29) {
+  box-shadow: 3px 0px rgba(255, 255, 255, 0), 6px -5px rgba(10, 0, 0, 0);
+  width: 174px;
+  height: 29px;
+  right: 290px;
+  bottom: 290px;
+  filter: blur(17.6666666667px);
+  transform-origin: 116px 58px;
+  animation: spin 3s 2.9s linear infinite;
+  background: rgba(255, 99, 50, 0.6375);
+}
+.wrapper .kv .smokeFrame .smoke:nth-child(30) {
+  box-shadow: 3px 0px rgba(255, 255, 255, 0), 6px -5px rgba(10, 0, 0, 0);
+  width: 180px;
+  height: 30px;
+  right: 300px;
+  bottom: 300px;
+  filter: blur(18px);
+  transform-origin: 120px 60px;
+  animation: spin 3s 3s linear infinite;
+  background: rgba(255, 100, 50, 0.625);
+}
+.wrapper .kv .smokeFrame .smoke:nth-child(31) {
+  box-shadow: 3px 0px rgba(255, 255, 255, 0), 6px -5px rgba(10, 0, 0, 0);
+  width: 186px;
+  height: 31px;
+  right: 310px;
+  bottom: 310px;
+  filter: blur(18.3333333333px);
+  transform-origin: 124px 62px;
+  animation: spin 3s 3.1s linear infinite;
+  background: rgba(255, 101, 50, 0.6125);
+}
+.wrapper .kv .smokeFrame .smoke:nth-child(32) {
+  box-shadow: 3px 0px rgba(255, 255, 255, 0), 6px -5px rgba(10, 0, 0, 0);
+  width: 192px;
+  height: 32px;
+  right: 320px;
+  bottom: 320px;
+  filter: blur(18.6666666667px);
+  transform-origin: 128px 64px;
+  animation: spin 3s 3.2s linear infinite;
+  background: rgba(255, 102, 50, 0.6);
+}
+.wrapper .kv .smokeFrame .smoke:nth-child(33) {
+  box-shadow: 3px 0px rgba(255, 255, 255, 0), 6px -5px rgba(10, 0, 0, 0);
+  width: 198px;
+  height: 33px;
+  right: 330px;
+  bottom: 330px;
+  filter: blur(19px);
+  transform-origin: 132px 66px;
+  animation: spin 3s 3.3s linear infinite;
+  background: rgba(255, 103, 50, 0.5875);
+}
+.wrapper .kv .smokeFrame .smoke:nth-child(34) {
+  box-shadow: 3px 0px rgba(255, 255, 255, 0), 6px -5px rgba(10, 0, 0, 0);
+  width: 204px;
+  height: 34px;
+  right: 340px;
+  bottom: 340px;
+  filter: blur(19.3333333333px);
+  transform-origin: 136px 68px;
+  animation: spin 3s 3.4s linear infinite;
+  background: rgba(255, 104, 50, 0.575);
+}
+.wrapper .kv .smokeFrame .smoke:nth-child(35) {
+  box-shadow: 3px 0px rgba(255, 255, 255, 0), 6px -5px rgba(10, 0, 0, 0);
+  width: 210px;
+  height: 35px;
+  right: 350px;
+  bottom: 350px;
+  filter: blur(19.6666666667px);
+  transform-origin: 140px 70px;
+  animation: spin 3s 3.5s linear infinite;
+  background: rgba(255, 105, 50, 0.5625);
+}
+.wrapper .kv .smokeFrame .smoke:nth-child(36) {
+  box-shadow: 3px 0px rgba(255, 255, 255, 0), 6px -5px rgba(10, 0, 0, 0);
+  width: 216px;
+  height: 36px;
+  right: 360px;
+  bottom: 360px;
+  filter: blur(20px);
+  transform-origin: 144px 72px;
+  animation: spin 3s 3.6s linear infinite;
+  background: rgba(255, 106, 50, 0.55);
+}
+.wrapper .kv .smokeFrame .smoke:nth-child(37) {
+  box-shadow: 3px 0px rgba(255, 255, 255, 0), 6px -5px rgba(10, 0, 0, 0);
+  width: 222px;
+  height: 37px;
+  right: 370px;
+  bottom: 370px;
+  filter: blur(20.3333333333px);
+  transform-origin: 148px 74px;
+  animation: spin 3s 3.7s linear infinite;
+  background: rgba(255, 107, 50, 0.5375);
+}
+.wrapper .kv .smokeFrame .smoke:nth-child(38) {
+  box-shadow: 3px 0px rgba(255, 255, 255, 0), 6px -5px rgba(10, 0, 0, 0);
+  width: 228px;
+  height: 38px;
+  right: 380px;
+  bottom: 380px;
+  filter: blur(20.6666666667px);
+  transform-origin: 152px 76px;
+  animation: spin 3s 3.8s linear infinite;
+  background: rgba(255, 108, 50, 0.525);
+}
+.wrapper .kv .smokeFrame .smoke:nth-child(39) {
+  box-shadow: 3px 0px rgba(255, 255, 255, 0), 6px -5px rgba(10, 0, 0, 0);
+  width: 234px;
+  height: 39px;
+  right: 390px;
+  bottom: 390px;
+  filter: blur(21px);
+  transform-origin: 156px 78px;
+  animation: spin 3s 3.9s linear infinite;
+  background: rgba(255, 109, 50, 0.5125);
+}
+.wrapper .kv .smokeFrame .smoke:nth-child(40) {
+  box-shadow: 3px 0px rgba(255, 255, 255, 0), 6px -5px rgba(10, 0, 0, 0);
+  width: 240px;
+  height: 40px;
+  right: 400px;
+  bottom: 400px;
+  filter: blur(21.3333333333px);
+  transform-origin: 160px 80px;
+  animation: spin 3s 4s linear infinite;
+  background: rgba(255, 110, 50, 0.5);
+}
+.wrapper .kv .smokeFrame .smoke:nth-child(41) {
+  box-shadow: 3px 0px rgba(255, 255, 255, 0), 6px -5px rgba(10, 0, 0, 0);
+  width: 246px;
+  height: 41px;
+  right: 410px;
+  bottom: 410px;
+  filter: blur(21.6666666667px);
+  transform-origin: 164px 82px;
+  animation: spin 3s 4.1s linear infinite;
+  background: rgba(255, 111, 50, 0.4875);
+}
+.wrapper .kv .smokeFrame .smoke:nth-child(42) {
+  box-shadow: 3px 0px rgba(255, 255, 255, 0), 6px -5px rgba(10, 0, 0, 0);
+  width: 252px;
+  height: 42px;
+  right: 420px;
+  bottom: 420px;
+  filter: blur(22px);
+  transform-origin: 168px 84px;
+  animation: spin 3s 4.2s linear infinite;
+  background: rgba(255, 112, 50, 0.475);
+}
+.wrapper .kv .smokeFrame .smoke:nth-child(43) {
+  box-shadow: 3px 0px rgba(255, 255, 255, 0), 6px -5px rgba(10, 0, 0, 0);
+  width: 258px;
+  height: 43px;
+  right: 430px;
+  bottom: 430px;
+  filter: blur(22.3333333333px);
+  transform-origin: 172px 86px;
+  animation: spin 3s 4.3s linear infinite;
+  background: rgba(255, 113, 50, 0.4625);
+}
+.wrapper .kv .smokeFrame .smoke:nth-child(44) {
+  box-shadow: 3px 0px rgba(255, 255, 255, 0), 6px -5px rgba(10, 0, 0, 0);
+  width: 264px;
+  height: 44px;
+  right: 440px;
+  bottom: 440px;
+  filter: blur(22.6666666667px);
+  transform-origin: 176px 88px;
+  animation: spin 3s 4.4s linear infinite;
+  background: rgba(255, 114, 50, 0.45);
+}
+.wrapper .kv .smokeFrame .smoke:nth-child(45) {
+  box-shadow: 3px 0px rgba(255, 255, 255, 0), 6px -5px rgba(10, 0, 0, 0);
+  width: 270px;
+  height: 45px;
+  right: 450px;
+  bottom: 450px;
+  filter: blur(23px);
+  transform-origin: 180px 90px;
+  animation: spin 3s 4.5s linear infinite;
+  background: rgba(255, 115, 50, 0.4375);
+}
+.wrapper .kv .smokeFrame .smoke:nth-child(46) {
+  box-shadow: 3px 0px rgba(255, 255, 255, 0), 6px -5px rgba(10, 0, 0, 0);
+  width: 276px;
+  height: 46px;
+  right: 460px;
+  bottom: 460px;
+  filter: blur(23.3333333333px);
+  transform-origin: 184px 92px;
+  animation: spin 3s 4.6s linear infinite;
+  background: rgba(255, 116, 50, 0.425);
+}
+.wrapper .kv .smokeFrame .smoke:nth-child(47) {
+  box-shadow: 3px 0px rgba(255, 255, 255, 0), 6px -5px rgba(10, 0, 0, 0);
+  width: 282px;
+  height: 47px;
+  right: 470px;
+  bottom: 470px;
+  filter: blur(23.6666666667px);
+  transform-origin: 188px 94px;
+  animation: spin 3s 4.7s linear infinite;
+  background: rgba(255, 117, 50, 0.4125);
+}
+.wrapper .kv .smokeFrame .smoke:nth-child(48) {
+  box-shadow: 3px 0px rgba(255, 255, 255, 0), 6px -5px rgba(10, 0, 0, 0);
+  width: 288px;
+  height: 48px;
+  right: 480px;
+  bottom: 480px;
+  filter: blur(24px);
+  transform-origin: 192px 96px;
+  animation: spin 3s 4.8s linear infinite;
+  background: rgba(255, 118, 50, 0.4);
+}
+.wrapper .kv .smokeFrame .smoke:nth-child(49) {
+  box-shadow: 3px 0px rgba(255, 255, 255, 0), 6px -5px rgba(10, 0, 0, 0);
+  width: 294px;
+  height: 49px;
+  right: 490px;
+  bottom: 490px;
+  filter: blur(24.3333333333px);
+  transform-origin: 196px 98px;
+  animation: spin 3s 4.9s linear infinite;
+  background: rgba(255, 119, 50, 0.3875);
+}
+.wrapper .kv .smokeFrame .smoke:nth-child(50) {
+  box-shadow: 3px 0px rgba(255, 255, 255, 0), 6px -5px rgba(10, 0, 0, 0);
+  width: 300px;
+  height: 50px;
+  right: 500px;
+  bottom: 500px;
+  filter: blur(24.6666666667px);
+  transform-origin: 200px 100px;
+  animation: spin 3s 5s linear infinite;
+  background: rgba(255, 120, 50, 0.375);
+}
+.wrapper .kv .smokeFrame .smoke:nth-child(51) {
+  box-shadow: 3px 0px rgba(255, 255, 255, 0), 6px -5px rgba(10, 0, 0, 0);
+  width: 306px;
+  height: 51px;
+  right: 510px;
+  bottom: 510px;
+  filter: blur(25px);
+  transform-origin: 204px 102px;
+  animation: spin 3s 5.1s linear infinite;
+  background: rgba(255, 121, 50, 0.3625);
+}
+.wrapper .kv .smokeFrame .smoke:nth-child(52) {
+  box-shadow: 3px 0px rgba(255, 255, 255, 0), 6px -5px rgba(10, 0, 0, 0);
+  width: 312px;
+  height: 52px;
+  right: 520px;
+  bottom: 520px;
+  filter: blur(25.3333333333px);
+  transform-origin: 208px 104px;
+  animation: spin 3s 5.2s linear infinite;
+  background: rgba(255, 122, 50, 0.35);
+}
+.wrapper .kv .smokeFrame .smoke:nth-child(53) {
+  box-shadow: 3px 0px rgba(255, 255, 255, 0), 6px -5px rgba(10, 0, 0, 0);
+  width: 318px;
+  height: 53px;
+  right: 530px;
+  bottom: 530px;
+  filter: blur(25.6666666667px);
+  transform-origin: 212px 106px;
+  animation: spin 3s 5.3s linear infinite;
+  background: rgba(255, 123, 50, 0.3375);
+}
+.wrapper .kv .smokeFrame .smoke:nth-child(54) {
+  box-shadow: 3px 0px rgba(255, 255, 255, 0), 6px -5px rgba(10, 0, 0, 0);
+  width: 324px;
+  height: 54px;
+  right: 540px;
+  bottom: 540px;
+  filter: blur(26px);
+  transform-origin: 216px 108px;
+  animation: spin 3s 5.4s linear infinite;
+  background: rgba(255, 124, 50, 0.325);
+}
+.wrapper .kv .smokeFrame .smoke:nth-child(55) {
+  box-shadow: 3px 0px rgba(255, 255, 255, 0), 6px -5px rgba(10, 0, 0, 0);
+  width: 330px;
+  height: 55px;
+  right: 550px;
+  bottom: 550px;
+  filter: blur(26.3333333333px);
+  transform-origin: 220px 110px;
+  animation: spin 3s 5.5s linear infinite;
+  background: rgba(255, 125, 50, 0.3125);
+}
+.wrapper .kv .smokeFrame .smoke:nth-child(56) {
+  box-shadow: 3px 0px rgba(255, 255, 255, 0), 6px -5px rgba(10, 0, 0, 0);
+  width: 336px;
+  height: 56px;
+  right: 560px;
+  bottom: 560px;
+  filter: blur(26.6666666667px);
+  transform-origin: 224px 112px;
+  animation: spin 3s 5.6s linear infinite;
+  background: rgba(255, 126, 50, 0.3);
+}
+.wrapper .kv .smokeFrame .smoke:nth-child(57) {
+  box-shadow: 3px 0px rgba(255, 255, 255, 0), 6px -5px rgba(10, 0, 0, 0);
+  width: 342px;
+  height: 57px;
+  right: 570px;
+  bottom: 570px;
+  filter: blur(27px);
+  transform-origin: 228px 114px;
+  animation: spin 3s 5.7s linear infinite;
+  background: rgba(255, 127, 50, 0.2875);
+}
+.wrapper .kv .smokeFrame .smoke:nth-child(58) {
+  box-shadow: 3px 0px rgba(255, 255, 255, 0), 6px -5px rgba(10, 0, 0, 0);
+  width: 348px;
+  height: 58px;
+  right: 580px;
+  bottom: 580px;
+  filter: blur(27.3333333333px);
+  transform-origin: 232px 116px;
+  animation: spin 3s 5.8s linear infinite;
+  background: rgba(255, 128, 50, 0.275);
+}
+.wrapper .kv .smokeFrame .smoke:nth-child(59) {
+  box-shadow: 3px 0px rgba(255, 255, 255, 0), 6px -5px rgba(10, 0, 0, 0);
+  width: 354px;
+  height: 59px;
+  right: 590px;
+  bottom: 590px;
+  filter: blur(27.6666666667px);
+  transform-origin: 236px 118px;
+  animation: spin 3s 5.9s linear infinite;
+  background: rgba(255, 129, 50, 0.2625);
+}
+.wrapper .kv .smokeFrame .smoke:nth-child(60) {
+  box-shadow: 3px 0px rgba(255, 255, 255, 0), 6px -5px rgba(10, 0, 0, 0);
+  width: 360px;
+  height: 60px;
+  right: 600px;
+  bottom: 600px;
+  filter: blur(28px);
+  transform-origin: 240px 120px;
+  animation: spin 3s 6s linear infinite;
+  background: rgba(255, 130, 50, 0.25);
+}
+.wrapper .kv .smokeFrame .portraitCon {
+  bottom: 0;
+  z-index: 10;
+}
+.wrapper .kv .smokeFrame .portraitCon .portrait {
+  width: 100%;
+  max-width: 230px;
+  bottom: 0;
+}
+.wrapper .kv .smokeFrame .titlePos {
+  color: #de5350;
+  font-size: 16rem;
+  font-weight: 900;
+  line-height: 1.15;
+  height: 528px;
+}
+@media screen and (max-width: 992px) {
+  .wrapper .kv .smokeFrame .titlePos {
+    font-size: 11rem;
+    line-height: 1.02;
+  }
+}
+.wrapper .kv .smokeFrame .titlePos .titleCon {
+  width: 100%;
+  max-width: unset;
+}
+.wrapper .kv .smokeFrame .titlePos .titleCon .letter,
+.wrapper .kv .smokeFrame .titlePos .titleCon .letterSP {
+  perspective: 750px;
+}
+.wrapper .kv .smokeFrame .titlePos .titleCon .kv-letter-glyph {
+  display: inline-block;
+  backface-visibility: hidden;
+  transform-origin: 50% 50%;
+}
+.wrapper .kv .smokeFrame .titlePos .titleCon .kv-letter-glyph--flip {
+  display: grid;
+  backface-visibility: visible;
+  transform-style: preserve-3d;
+}
+.wrapper .kv .smokeFrame .titlePos .titleCon .kv-letter-face {
+  grid-area: 1/1;
+  backface-visibility: hidden;
+}
+.wrapper .kv .smokeFrame .titlePos .titleCon .kv-letter-face--back {
+  transform: rotateX(180deg);
+}
+.wrapper .kv .smokeFrame .titlePos .titleCon .col-20 {
+  width: 20%;
+}
+.wrapper .kv .smokeFrame .titlePos .titleCon .z-index-50 {
+  z-index: 50;
+}
+.wrapper .kv .bottomSpace {
+  height: 108px;
+}
+.wrapper .kv .signature {
+  width: 12%;
+  min-width: 150px;
+  cursor: pointer;
+  position: relative;
+  z-index: 100;
+}
+.wrapper .hrWidth {
+  width: 25%;
+}
+@media screen and (max-width: 992px) {
+  .wrapper .hrWidth {
+    width: 50%;
+  }
+}
+.wrapper .myNav {
+  position: sticky;
+  top: 0;
+  background-color: white;
+  transition: 0.3s;
+  border-bottom: 1px solid white;
+  padding: 1rem 0 1rem 0;
+  z-index: 100;
+}
+.wrapper .myNav .pointer {
+  cursor: pointer;
+}
+.wrapper .myNav.sticky {
+  background-color: #FFB000;
+  color: white;
+}
+.wrapper .modal-content {
+  overflow: hidden;
+  height: 650px;
+  width: 90%;
+  margin: 0 auto;
+  background-color: #FFB000;
+}
+.wrapper .modal-content .modal-body {
+  position: relative;
+  margin-top: -50px;
+}
+.wrapper .modal-content .modal-body .btn-close {
+  position: absolute;
+  right: 5px;
+  top: 60px;
+}
+.wrapper .modal-content .modal-body iframe {
+  overflow: hidden;
+  border: none;
+  overflow: hidden;
+  scrollbar-width: none;
+}
+.wrapper .marqueeCon {
+  color: black;
+  width: 100%;
+  overflow: hidden;
+  display: flex;
+  border-bottom: 1px solid black;
+  border-top: 1px solid black;
+  padding: 1rem;
+  margin-top: 3rem;
+}
+.wrapper .marqueeCon .marquee1, .wrapper .marqueeCon .marquee2, .wrapper .marqueeCon .marquee3 {
+  display: inline-block;
+  white-space: nowrap;
+  padding-left: 0.4rem;
+}
+.wrapper .marqueeCon .marquee1 {
+  animation: marquee1 20s linear infinite;
+}
+.wrapper .marqueeCon .marquee2 {
+  animation: marquee2 20s linear infinite;
+}
+.wrapper .marqueeCon .marquee3 {
+  animation: marquee2 20s linear infinite;
+}
+.wrapper .marqueeCon .marquee1 i, .wrapper .marqueeCon .marquee2 i, .wrapper .marqueeCon .marquee3 i {
+  margin: 0 0.2rem;
+}
+@keyframes marquee1 {
+  0% {
+    transform: translateX(0);
+  }
+  100% {
+    transform: translateX(-100%);
+  }
+}
+@keyframes marquee2 {
+  0% {
+    transform: translateX(0);
+  }
+  100% {
+    transform: translateX(-100%);
+  }
+}
+@keyframes marquee3 {
+  0% {
+    transform: translateX(0);
+  }
+  100% {
+    transform: translateX(-100%);
+  }
+}
+.wrapper .about {
+  position: sticky;
+  top: 0;
+  display: flex;
+  width: 100%;
+  aspect-ratio: 2/1;
+  overflow: hidden;
+  border-bottom: 1px solid black;
+}
+@media screen and (max-width: 992px) {
+  .wrapper .about {
+    aspect-ratio: 1/1.2;
+  }
+}
+.wrapper .about .aboutMarquee {
+  width: unset;
+  color: black;
+  border-right: 1px solid black;
+  height: 100%;
+}
+@media screen and (max-width: 992px) {
+  .wrapper .about .aboutMarquee {
+    width: 15%;
+  }
+}
+.wrapper .about .aboutMarquee .aboutMarqueeTrack {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  animation: aboutVerticalMarquee 16s linear infinite;
+}
+.wrapper .about .aboutMarquee .aboutMarqueeTrack span {
+  writing-mode: vertical-rl;
+  text-orientation: mixed;
+  white-space: nowrap;
+  font-size: clamp(3rem, 6vw, 6.5rem);
+  font-weight: 900;
+  line-height: 1;
+  letter-spacing: 0.1em;
+}
+.wrapper .about .aboutMain {
+  width: 100%;
+  position: relative;
+  padding: 0 2vw 0 5vw;
+}
+@media screen and (max-width: 992px) {
+  .wrapper .about .aboutMain {
+    width: 85%;
+  }
+}
+.wrapper .about .aboutMain .big-letters {
+  color: #FFB000;
+  font-size: 23vw;
+  font-weight: 900;
+  line-height: 1.5vw;
+}
+.wrapper .about .aboutMain .big-letters.custom-padding {
+  padding: 12vw 0 0 0;
+}
+.wrapper .about .aboutMain .big-letters .about-pop-letter {
+  display: inline-block;
+  transform-origin: 50% 100%;
+  will-change: transform, opacity;
+}
+.wrapper .about .aboutMain .big-letters .serif {
+  color: #de5350;
+  font-size: 15vw;
+  font-family: Georgia, "Times New Roman", Times, serif;
+  font-style: italic;
+}
+@media screen and (max-width: 992px) {
+  .wrapper .about .aboutMain .big-letters .serif {
+    font-size: 18vw;
+  }
+}
+.wrapper .about .aboutMain .font-con {
+  z-index: 20;
+  padding-top: 1.5vw;
+  font-size: 1.4vw;
+  width: 49%;
+  border-right: 1px solid black;
+  padding-right: 1vw;
+}
+@media screen and (max-width: 992px) {
+  .wrapper .about .aboutMain .font-con {
+    width: 100%;
+    font-size: 4vw;
+    padding-top: 4vw;
+    border-right: unset;
+    padding-right: unset;
+  }
+}
+.wrapper .about .aboutMain .lights {
+  position: absolute;
+  width: 12vw;
+  bottom: 2vw;
+  right: 0vw;
+  z-index: 10;
+  transform-origin: center;
+  animation: lightsSpin 12s linear infinite;
+}
+@media screen and (max-width: 992px) {
+  .wrapper .about .aboutMain .lights {
+    width: 20vw;
+  }
+}
+@keyframes aboutVerticalMarquee {
+  from {
+    transform: translateY(0);
+  }
+  to {
+    transform: translateY(-50%);
+  }
+}
+@keyframes lightsSpin {
+  to {
+    transform: rotate(360deg);
+  }
+}
+@media (prefers-reduced-motion: reduce) {
+  .wrapper .about .aboutMarqueeTrack {
+    animation-play-state: paused;
+    will-change: auto;
+  }
+  .wrapper .about .lights {
+    animation-play-state: paused;
+  }
+}
+.wrapper .works {
+  position: relative;
+  z-index: 50;
+  isolation: isolate;
+  background-color: white;
+}
+.wrapper .works .websites .webSitesBg {
+  overflow-x: clip;
+  position: relative;
+  background-color: #FFB000;
+  padding-top: 100px;
+  padding-bottom: 100px;
+  counter-reset: projectNumber;
+}
+.wrapper .works .websites .webSitesBg .numberTag {
+  counter-increment: projectNumber;
+}
+.wrapper .works .websites .webSitesBg .numberTag::before {
+  content: counter(projectNumber, decimal-leading-zero);
+  display: block;
+  color: inherit;
+  font-size: inherit;
+  font-weight: inherit;
+  line-height: inherit;
+}
+.wrapper .works .websites .webSitesBg .cardStyle {
+  background-color: black;
+}
+.wrapper .works .websites .webSitesBg .cardStyle img {
+  border: 1px solid white;
+}
+.wrapper .works .websites .webSitesBg .cardStyle .numberTag, .wrapper .works .websites .webSitesBg .cardStyle .arrow {
+  position: absolute;
+  z-index: 20;
+  font-size: 170%;
+  font-weight: 900;
+  line-height: 1;
+  background-color: black;
+  color: white;
+  border: 1px solid white;
+  border-radius: 50%;
+  padding: 2%;
+  font-style: italic;
+  transition: 0.3s;
+}
+.wrapper .works .websites .webSitesBg .cardStyle .numberTag:hover, .wrapper .works .websites .webSitesBg .cardStyle .arrow:hover {
+  background-color: white;
+  color: black;
+}
+.wrapper .works .websites .webSitesBg .cardStyle .posNum {
+  right: 19%;
+  align-self: center;
+}
+.wrapper .works .websites .webSitesBg .cardStyle .posArrow {
+  right: 4%;
+  align-self: center;
+}
+.wrapper .works .websites .webSitesBg .cardStyle .posArrow.bi {
+  transform: rotate(45deg);
+}
+.wrapper .works .websites .webSitesBg .cardStyle .posArrow.bi:hover {
+  transform: rotate(0deg);
+}
+.wrapper .works .websites .webSitesBg .cardDes {
+  display: inline-block;
+  padding: 0.25rem 0.5rem;
+  font-size: 1.25rem;
+  font-weight: bold;
+  color: black;
+  background-color: white;
+  line-height: 1;
+}
+.wrapper .works .graphics {
+  padding-top: 100px;
+  min-height: 100vh;
+  background-color: white;
+}
+.wrapper .works .graphics .image-grid {
+  position: relative;
+  z-index: 1;
+  width: auto;
+  margin: 1.25rem;
+  box-shadow: 0 0 0 1.25rem white;
+  transition: opacity 0.2s ease;
+}
+.wrapper .works .graphics .image-grid.are-images-unloaded {
+  opacity: 0;
+}
+.wrapper .works .graphics .image-grid__item,
+.wrapper .works .graphics .image-grid__col-sizer {
+  width: 23.5%;
+}
+@media screen and (max-width: 992px) {
+  .wrapper .works .graphics .image-grid__item,
+  .wrapper .works .graphics .image-grid__col-sizer {
+    width: 49%;
+  }
+}
+.wrapper .works .graphics .image-grid__gutter-sizer {
+  width: 2%;
+}
+.wrapper .works .graphics .image-grid.are-images-unloaded .image-grid__item {
+  opacity: 0;
+}
+.wrapper .works .graphics .image-grid__item {
+  margin-bottom: 2vw;
+}
+.wrapper .works .graphics .image-grid__item--width2 {
+  width: 49%;
+}
+.wrapper .works .graphics .image-grid__item img {
+  display: block;
+  width: 100%;
+  height: auto;
+}
+.wrapper .works .graphics .page-load-status {
+  display: none; /* hidden by default */
+  padding-top: 20px;
+  border-top: 1px solid #DDD;
+  text-align: center;
+  color: #777;
+}
+.wrapper .works .graphics .loader-ellips {
+  font-size: 20px; /* change size here */
+  position: relative;
+  z-index: 1;
+  width: 4em;
+  height: 1em;
+  margin: 10px auto;
+}
+.wrapper .works .graphics .loader-ellips__dot {
+  display: block;
+  width: 0.5em;
+  height: 0.5em;
+  border-radius: 0.5em;
+  background: #FFB000; /* change color here */
+  position: absolute;
+  animation-duration: 0.5s;
+  animation-timing-function: ease;
+  animation-iteration-count: infinite;
+}
+.wrapper .works .graphics .loader-ellips__dot:nth-child(1),
+.wrapper .works .graphics .loader-ellips__dot:nth-child(2) {
+  left: 0;
+}
+.wrapper .works .graphics .loader-ellips__dot:nth-child(3) {
+  left: 1.5em;
+}
+.wrapper .works .graphics .loader-ellips__dot:nth-child(4) {
+  left: 3em;
+}
+@keyframes reveal {
+  from {
+    transform: scale(0.001);
+  }
+  to {
+    transform: scale(1);
+  }
+}
+@keyframes slide {
+  to {
+    transform: translateX(1.5em);
+  }
+}
+.wrapper .works .graphics .loader-ellips__dot:nth-child(1) {
+  animation-name: reveal;
+}
+.wrapper .works .graphics .loader-ellips__dot:nth-child(2),
+.wrapper .works .graphics .loader-ellips__dot:nth-child(3) {
+  animation-name: slide;
+}
+.wrapper .works .graphics .loader-ellips__dot:nth-child(4) {
+  animation-name: reveal;
+  animation-direction: reverse;
+}
+.wrapper .works .graphics .scroller-status {
+  position: relative;
+  z-index: 2;
+  color: #faa307;
+  margin: 0;
+  padding: 10px 1.25rem;
+  background-color: white;
+}
+.wrapper .works .graphics .scroller-status::after {
+  content: "";
+  position: absolute;
+  z-index: 0;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: calc(100% + 10rem);
+  background-color: white;
+  pointer-events: none;
+}
+.wrapper .contact {
+  position: relative;
+  z-index: 60;
+  isolation: isolate;
+  background-color: #FFB000;
+}
+.wrapper .contact .ticker {
+  overflow: hidden;
+  background: black;
+  padding: 17px 0;
+  color: #ffc300;
+  font-weight: 900;
+  font-size: 22px;
+  white-space: nowrap;
+}
+.wrapper .contact .ticker div {
+  width: -moz-max-content;
+  width: max-content;
+  animation: marquee 18s linear infinite;
+}
+@keyframes marquee {
+  to {
+    transform: translateX(-50%);
+  }
+}
+.wrapper .contact .title hr {
+  opacity: 1;
+}
+.wrapper .contact .title {
+  padding: 2vw;
+  background-color: #FFB000;
+}
+.wrapper .contact .title .big-letters {
+  color: white;
+  font-size: 15vw;
+  font-weight: 900;
+  line-height: 5.5vw;
+}
+.wrapper .contact .title .big-letters.custom-padding {
+  padding: 20vw 0 0 0;
+}
+.wrapper .contact .title .big-letters .serif {
+  color: #de5350;
+  font-size: 9vw;
+  font-family: Georgia, "Times New Roman", Times, serif;
+  font-style: italic;
+}
+@media screen and (max-width: 992px) {
+  .wrapper .contact .title .big-letters {
+    font-size: 35vw;
+    line-height: 26vw;
+  }
+  .wrapper .contact .title .big-letters.custom-padding {
+    padding: 8vw 0 0 0;
+  }
+  .wrapper .contact .title .big-letters .serif {
+    font-size: 18vw;
+    line-height: 14vw;
+  }
+}
+.wrapper .contact .title .circle {
+  position: absolute;
+  display: grid;
+  place-items: center;
+  transition: transform 0.7s cubic-bezier(0.2, 0.8, 0.2, 1);
+  will-change: transform;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  cursor: pointer;
+}
+.wrapper .contact .title .circle .seal {
+  width: 25vw;
+  height: 25vw;
+  display: grid;
+  place-items: center;
+  text-align: center;
+  font-size: 9vw;
+  line-height: 1;
+  animation: spin 16s linear infinite;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+}
+@media screen and (max-width: 992px) {
+  .wrapper .contact .title .circle .seal {
+    width: 60vw;
+    height: 60vw;
+    font-size: 18vw;
+  }
+}
+.wrapper .contact .title .circle i {
+  position: absolute;
+  width: 80%;
+  aspect-ratio: 1;
+  border: 1px solid currentColor;
+  border-radius: 50%;
+  animation: drift 6s ease-in-out infinite;
+}
+@keyframes drift {
+  100% {
+    transform: translate(0, 0) scale(1);
+  }
+  50% {
+    transform: translate(-2vw, 2vh) scale(1.08);
+  }
+}/*# sourceMappingURL=style.css.map */
